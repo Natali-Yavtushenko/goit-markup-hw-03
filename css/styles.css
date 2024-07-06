@@ -3,12 +3,49 @@ body {
   background-color: #fff;
   color: #434455;
 }
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
 }
+
+.conteiner {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+}
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -27,12 +64,17 @@ a {
   text-transform: uppercase;
   color: #2e2f42;
 }
+
 .header-menu-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+  align-items: center;
 }
 .header-menu-item {
   font-weight: 400;
@@ -42,11 +84,14 @@ a {
   color: #434455;
 }
 .header-menu-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -54,6 +99,12 @@ a {
 }
 .header-contact {
   font-style: normal;
+  margin-left: auto;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 40px;
 }
 .header-contacts-item {
   font-weight: 400;
@@ -80,6 +131,10 @@ a {
 
 .hero {
   background: #2e2f42;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
 }
 
 .hero-title {
@@ -89,29 +144,62 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
-
 .hero-btn {
   background: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: block;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
 
-.Mission {
+.mission {
+  text-align: center;
+  text-decoration: capitalize;
+  margin-bottom: 8px;
+}
+.visuali-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .massion-list {
+  display: flex;
+  gap: 24px;
+  max-width: 1158px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .mission-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .mission-subtitle {
@@ -120,6 +208,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .mission-item-text {
@@ -128,10 +217,13 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 10px;
 }
 
 .our-team {
   background-color: #f4f4fd;
+  margin-top: 120px;
+  height: 732px;
 }
 
 .team {
@@ -142,17 +234,34 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .team-list {
   background-color: #ffffff;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
 }
 
 .team-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: calc((100% - 3 * 24px) / 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-img {
+  display: block;
 }
 
 .team-subtitle {
@@ -162,6 +271,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -171,6 +281,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 32px;
 }
 
 .portfolio {
@@ -183,6 +294,8 @@ a {
   color: #2e2f42;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .portfolio-item {
 }
@@ -229,4 +342,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
 }
