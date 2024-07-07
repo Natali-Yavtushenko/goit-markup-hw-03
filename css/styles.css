@@ -43,9 +43,6 @@ a {
 .header-navigation {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  justify-content: space-between;
 }
 
 .header-logo {
@@ -69,22 +66,11 @@ a {
 }
 
 .header-menu-list {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
   display: flex;
-  margin-left: 76px;
   gap: 40px;
   align-items: center;
 }
 .header-menu-item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 .header-menu-link {
   display: block;
@@ -108,7 +94,6 @@ a {
 .header-contacts {
   display: flex;
   gap: 40px;
-  justify-content: space-between;
   align-items: center;
 }
 .header-contacts-item {
@@ -128,6 +113,9 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
@@ -136,12 +124,6 @@ a {
 
 .hero {
   background: #2e2f42;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 120px;
-  justify-content: center;
-  flex-direction: column;
   padding: 188px 0;
 }
 
@@ -153,6 +135,7 @@ a {
   text-align: center;
   color: #fff;
   max-width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 .hero-btn {
@@ -213,12 +196,7 @@ a {
 .massion-list {
   display: flex;
   gap: 24px;
-  max-width: 1158px;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: row;
 }
-
 .mission-item {
   max-width: calc((100% - 3 * 24px) / 4);
 }
@@ -238,13 +216,10 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding: 10px;
 }
 
 .our-team {
   background-color: #f4f4fd;
-  margin-top: 120px;
-  height: 732px;
 }
 
 .team {
@@ -254,33 +229,20 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
   color: var(--navy-blue);
-  align-items: flex-start;
-  gap: 24px;
+
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   gap: 24px;
-  margin-bottom: 120px;
 }
 
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: calc((100% - 3 * 24px) / 4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 264px;
   height: 380px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -311,7 +273,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -324,7 +285,6 @@ img {
   text-align: center;
   color: #2e2f42;
   color: var(--navy-blue);
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
@@ -332,11 +292,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  justify-content: space-between;
   align-items: center;
 }
 .portfolio-item {
-  max-width: 360px;
+  max-width: calc((100% - 48) / 3);
   background: #fff;
 }
 
@@ -346,17 +305,12 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-right: 226p;
-  padding-bottom: 8px;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 .portfolio-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 .portfolio-text {
   font-weight: 400;
@@ -364,13 +318,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 .footer {
   background: #2e2f42;
-  margin-top: 120px;
-  height: 312px;
   padding: 100px 0;
 }
 .footer-logo {
@@ -385,15 +335,7 @@ img {
   margin-bottom: 16px;
 }
 .footer-logo-studio {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #f4f4fd;
-  display: inline-block;
-  margin-bottom: 16px;
 }
 .footer-text {
   font-weight: 400;
@@ -402,6 +344,4 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  height: 200px;
-  padding: 10px;
 }
